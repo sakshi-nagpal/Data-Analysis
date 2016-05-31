@@ -1,0 +1,127 @@
+.ui-data-grid {
+    padding-bottom: 25px;
+}
+.ui-data-grid .grid-title {
+  font-size: 20px;
+}
+.ui-data-grid .grid {
+  display: inherit;
+  color: rgba(0, 0, 0, 0.8);
+}
+.ui-data-grid .pan {
+  padding: 0;
+}
+.ui-data-grid .mll {
+  margin-left: 20px;
+}
+.ui-data-grid .grid {
+  border-radius: 3px;
+}
+.ui-data-grid .grid-search-box {
+    position: relative;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+}
+.ui-data-grid .grid-search-box .search-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.ui-data-grid .grid-search-box .result-count {
+    padding: 0 5px;
+}
+.ui-data-grid .grid-search-box .input-box {
+    height: 26px;
+    width: 172px;
+    color: #777777;
+    padding:4px;
+}
+.ui-data-grid .grid-search-box .grid-cancel {
+    position: absolute;
+    left: 344px;
+    height: 35px;
+    line-height: 35px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.ui-data-grid .ui-grid-header {
+  border: none !important;
+}
+.ui-data-grid .ui-grid-header .ui-grid-top-panel {
+  border-bottom: solid 1px !important;
+  border-color: rgba(0, 0, 0, 0.1);
+  height: 40px;
+}
+.ui-data-grid .ui-grid-header .ui-grid-header-cell {
+  border-color: #ddd;
+}
+ ui-data-grid .ui-grid-header .ui-grid-header-cell .ui-grid-icon-down-dir:before,
+.ui-data-grid .ui-grid-header .ui-grid-header-cell .ui-grid-icon-up-dir:before {
+  position: absolute;
+    margin: 0;
+}
+.ui-data-grid .ui-grid-header .ui-grid-header-cell .ui-grid-icon-up-dir:before {
+  top: 9px;
+}
+.ui-data-grid .ui-grid-header .ui-grid-header-cell .ui-grid-icon-down-dir:before {
+  top: 15px;
+}
+.ui-data-grid .ui-grid-header .ui-grid-header-cell .ui-grid-cell-contents {
+  outline: none;
+  line-height: 30px;
+  margin-left: 15px;
+}
+.ui-data-grid .grid .show-ellipsis {
+  max-width: 70%;
+  float: left;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ui-data-grid .msg-block {
+  position: absolute;
+  top: 40px;
+}
+.ui-data-grid .msg-text {
+  display: inline-block;
+  font-size: 18px;
+  margin: 30px;
+}
+.ui-data-grid .grid .ui-grid-viewport .ui-grid-row .ui-grid-cell {
+  border-bottom: solid 1px !important;
+  border-color: #d4d4d4 !important;
+  line-height: 30px;
+}
+.ui-data-grid .ui-grid-header-canvas .ui-grid-header-cell-wrapper {
+  background-color: #f3f3f3;
+}
+.ui-data-grid .grid .ui-grid-viewport .ui-grid-row .ui-grid-cell button {
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #777;
+  text-align: center;
+  outline: none !important;
+  margin-top: 2px;
+  display: block;
+  width: 56px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: auto;
+  color: #fff;
+  margin-left: auto;
+}
+.ui-data-grid .grid .ui-grid-viewport .ui-grid-row .ui-grid-cell button.red {
+  color: #d9534f;
+  border-color: #d43f3a;
+}
+.ui-data-grid .grid .ui-grid-viewport .ui-grid-row .ui-grid-cell button.green {
+  color: #5cb85c;
+  border-color: #4cae4c;
+}
+.ui-data-grid .grid .ui-grid-viewport .ui-grid-row .ui-grid-cell button.yellow {
+  color: #f0ad4e;
+  border-color: #eea236;
+}

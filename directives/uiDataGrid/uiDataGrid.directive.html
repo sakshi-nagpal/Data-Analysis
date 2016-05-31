@@ -1,0 +1,15 @@
+<div class='ui-data-grid'>
+    <div ng-bind='gridData.title' class='grid-title'></div>
+
+    <div class='grid-search-box' ng-if='searchEnabled'>
+        <span class='search-title'>{{searchTitle}}: </span>
+        <input ng-model='data.filterValue' placeholder='{{placeholderText}}' class='input-box'  ng-keyup='filterRows()'>
+        <i class='ui-grid-icon-cancel grid-cancel' ng-click='clearText()' ng-if='data.filterValue'></i>
+        <span class='result-count' ng-if='gridOptions.data && gridOptions.data.length && gridData.showCount'>Count: {{resultCount}}</span>
+    </div>
+    <div  id='grid1' ui-grid='gridOptions' class='grid'>
+        <div class='msg-block' ng-show='!resultCount'>
+            <span class='msg-text' ng-bind='errorMessage'></span>
+        </div>
+    </div>
+</div>

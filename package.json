@@ -1,0 +1,16 @@
+{
+  "name": "Data-Analysis",
+  "version": "0.1.0",
+  "engines": {
+    "node": "5.8.0"
+  },
+  "scripts": {
+    "preinstall": "bower install",
+    "postinstall": "node server.js"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "restify": "^4.1.0",
+    "serve-static-restify": "^1.0.0"
+  }
+}

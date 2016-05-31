@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head lang='en'>
+        <meta charset='UTF-8'>
+        <title>Match Data</title>
+        <link rel='stylesheet' type='text/css' href='main.css'>
+        <link rel='stylesheet' type='text/css' href='./bower_components/angular-ui-grid/ui-grid.min.css'>
+        <link rel='stylesheet' type='text/css' href='./directives/uiDataGrid/uiDataGrid.css'>
+    </head>
+    <body>
+        <div ng-app='mainApp'>
+            <div class='main-header'>
+                <h1 class='header'>Sachin Vs Sachin : Cricket Rating Series</h1>
+            </div>
+            <div class='main-container' data-ng-controller='MainController'>
+
+                <div class='chart-container'>
+                <div class='column' ng-if='barChartData.series[0].data && barChartData.series[1].data'>
+                    <graph-plugin graph-data = 'barChartData' ></graph-plugin>
+                </div>
+                <div class='column' ng-if='pieChartData.series[0].data'>
+                    <graph-plugin graph-data = 'pieChartData' ></graph-plugin>
+                </div>
+            </div>
+                <div class='grid-container' ng-if='gridConfig'>
+                    <div class='legend-container'>
+                        <div class='legend'>
+                            <i class='circle green'></i>
+                            <span class='text-green'>Won</span>
+                        </div>
+                        <div class='legend'>
+                            <i class='circle red'></i>
+                            <span class='text-red'>Lost</span>
+                        </div>
+                        <div class='legend'>
+                            <i class='circle yellow'></i>
+                            <span class='text-yellow'>No Result</span>
+                        </div>
+    
+                    </div>
+                    <div ng-if='gridConfig.data'>
+                        <ui-data-grid grid-config='gridConfig'></ui-data-grid>
+                    </div>
+    
+                </div>
+        </div>
+        </div>
+    </body>
+    <script src='./bower_components/jquery/dist/jquery.min.js'></script>
+    <script src='./bower_components/angular/angular.js'></script>
+    <script src='./bower_components/angular-touch/angular-touch.min.js'></script>
+    <script src='./bower_components/highcharts/highcharts.js'></script>
+    <script src='./bower_components/highcharts/highcharts-3d.js'></script>
+    <script src='./bower_components/angular-ui-grid/ui-grid.min.js'></script>
+    <script src='./index.js'></script>
+    <script src='./directives/ellipsisTooltip.directive.js'></script>
+    <script src='./directives/uiDataGrid/uiDataGrid.directive.js'></script>
+    <script src='./directives/graph/graph.directive.js'></script>
+</html>

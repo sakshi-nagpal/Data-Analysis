@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+.main-header{
+    background-color: rgb(161,161,161);
+    color: #fff;
+}
+.main-header .header{
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1260px;
+    font-size:24px;
+}
+.main-container{
+    max-width:1260px;
+    margin: auto;;
+}
+.main-container .chart-container{
+    width: 100%;
+}
+.main-container .column{
+    width : 49%;
+    height: 475px;
+    padding: 10px;;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.main-container .grid-container{
+    position: relative;
+}
+
+.main-container .legend-container{
+    height: 30px;
+    position: absolute;
+    right:0;
+    top:30px;
+    width:230px;
+}
+.main-container .legend{
+    display: inline-block;
+    padding: 0 8px;
+}
+.main-container .circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;;
+    display: inline-block;
+}
+.main-container .red{
+    background-color: #d9534f;
+}
+.main-container .text-red{
+    color: #d9534f;
+}
+.main-container .yellow{
+    background-color:#f0ad4e;
+}
+.main-container .text-yellow{
+    color:#f0ad4e;
+}
+.main-container .green{
+    background-color: #5cb85c;
+}
+.main-container .text-green{
+    color: #5cb85c;
+}
