@@ -18,7 +18,7 @@ Make sure you have installed Node.js - [Download & Install Node.js](http://www.n
   		$ npm install
   	```
 
-Your application should be running on port 9000 or simply click [http://localhost:9000](http://localhost:9000).
+Your application should be running on port 9000 and simply click [http://localhost:9000](http://localhost:9000).
 
 ## Note
 
